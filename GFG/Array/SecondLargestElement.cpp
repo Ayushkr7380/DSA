@@ -2,8 +2,8 @@
 using namespace std;
 int main(){
     int arr[]={12,4,5,32,56};
-    int LE = INT_MIN;
-    int SLE = INT_MIN;
+    int LE = INT_MIN; // LE = LargestElement
+    int SLE = INT_MIN; // SLE = SecondLargestElement
 
     int arrSize = sizeof(arr)/sizeof(arr[0]);
 
