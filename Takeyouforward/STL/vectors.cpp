@@ -16,7 +16,7 @@ void explainVectors(){
     vector<int> v(5,100); //first parameter  --> size , second parameter --> element.
 
     //Initialize with garbage value or 0.
-    vector<int> v(5); //5 elements with zero or garbage values.
+    vector<int> vec1(5); //5 elements with zero or garbage values.
 
     //Copy one vector to another vector
     vector<int> v1(5,32);
