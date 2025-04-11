@@ -61,8 +61,51 @@ void explainVectors(){
         cout<<i<<":";
     }
 
+    cout<<endl;
+
     //erase() function
-    v.erase(v.begin() + 1); // {100,100,100,100}
+
+    v.erase(v.begin() + 1); // {100,100,100,100};
+
+    cout<<"After erase : ";
+    for(int i:v){
+        cout<<i<<" ";
+    }
+
+    cout<<endl;
+    v.erase(v.begin() + 1,v.begin() + 3);
+    cout<<"Again erase function : ";
+    for(int i:v){
+        cout<<i<<" ";
+    }
+
+    //insert function
+    vector<int> in(2,50); //{50,50};
+    in.insert(in.begin(),55); //{55,50,50};
+    in.insert(in.begin() + 1,2,76); //{55,76,76,50,50};
+
+    vector<int> c1(2,45); //{45,45};
+    v.insert(v.begin() ,c1.begin(),c1.end()); //{45,45,100,100};
+
+    //size
+
+    cout<<c1.size(); //2
+
+    //{45,45}
+    c1.pop_back(); //{45};
+
+
+    vector<int> s1 = {10,20};
+    vector<int> s2 = {44,55};
+    //s1 -- {10,20};
+    //s2 -- {44,55};
+
+    s1.swap(s2); // s1 -- {44,55} , s2 -- {10,20};
+
+    s1.clear(); //erases the entire vector.
+
+    cout<<s1.empty();
+
 }
 int main(){
     explainVectors();
