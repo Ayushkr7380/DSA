@@ -22,6 +22,47 @@ void explainVectors(){
     vector<int> v1(5,32);
     vector<int> v2(v1); // vector v1 copied to v2 vector.
 
+    vector<int>::iterator it = v.begin();
+
+    it++;
+    cout<<*(it)<<" ";
+
+    it++;
+    cout<<*(it)<<" ";
+
+    vector<int>::iterator it1 = v1.end();
+
+    
+    it1--;
+    cout<<*(it1)<<" ";
+    
+    cout<<endl;
+
+    cout<<v[0]<<"|-|"<<v.at(0);
+    cout<<" v1.back() --> "<<v1.back()<<" "<<endl;
+
+
+    //For loop
+    for(vector<int>::iterator i  = v1.begin() ; i!= v1.end() ; i++){
+        cout<<*(i)<<"-";
+    }
+
+    cout<<endl;
+
+    //using auto keyword
+    for(auto i = v1.begin() ; i!=v1.end() ; i++){
+        cout<<*(i)<<",";
+    }
+
+    cout<<endl;
+
+    //
+    for(auto i:v){
+        cout<<i<<":";
+    }
+
+    //erase() function
+    v.erase(v.begin() + 1); // {100,100,100,100}
 }
 int main(){
     explainVectors();
