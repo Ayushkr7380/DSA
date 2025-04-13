@@ -7,8 +7,6 @@ int main() {
     vector<int> temp=arr;
     
 
-    
-
     //Next Permutation
     next_permutation(temp.begin(),temp.end());
 
