@@ -13,18 +13,25 @@ void selectionSort(int arr[],int size){
         arr[i] = temp;
     }
 }
+
 int main(){
     int arr[]={1,2,34,3,56};
     int size = sizeof(arr) / sizeof(arr[0]);
+
+    //Before sorting
     cout<<"Before selection sort : "<<endl;
     for(int ele:arr){
         cout<<ele<<" ";
     }
     cout<<endl;
+
+    //sorting function
     selectionSort(arr,size);
+
+    //After sorting
     cout<<"After selection sort : "<<endl;
     for(int ele:arr){
         cout<<ele<<" ";
     }
-    return 0;
+    return 0; //It tells the successful execution of program.
 }
