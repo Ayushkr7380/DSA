@@ -31,5 +31,14 @@ int main(){
         printf("Press 0 to exit. \n");
         scanf("%d",&choice);
     }
+
+    //Display
+
+    temp = head;
+    while(temp!=0){
+        printf("%d",temp->data);
+
+        temp = temp->next;
+    }
     return 0;
 }
