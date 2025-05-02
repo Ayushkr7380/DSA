@@ -17,6 +17,7 @@ void push(){
             top++;
             stack[top] = x;
         }
+        printf("top - %d\n",top);
     }
 }
 void pop(){
