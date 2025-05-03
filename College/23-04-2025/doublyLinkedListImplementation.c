@@ -1,11 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
+
+//Declare node globally
+
 struct node{
     struct node *prev;
     int data;
     struct node *next;
 };
+
+//Declare head pointer to store address of 1st node.
+//Declare temp pointer to traversal.
+//Declare newNode pointer to create store address of newnode each time.
 struct node *head,*temp,*newNode;
+
+//Function to create doubly linked list.
 void createDoublyLinkedList(){
     int choice = 1;
     head = 0;
@@ -32,6 +41,8 @@ void createDoublyLinkedList(){
         scanf("%d",&choice);
     }
 }
+
+//Function to display all nodes.
 void display(){
     printf("\n -- Elements of Doubly linked list --\n");
     temp = head;
@@ -41,6 +52,8 @@ void display(){
     }
     printf("\n");
 }
+
+//Function to insert node at the begin.
 void insertAtBeg(){
     newNode = (struct node*)malloc(sizeof(struct node));
     printf("Enter data : ");
@@ -62,6 +75,8 @@ void insertAtBeg(){
 
     printf("\n %d is inserted at the begin.\n",newNode->data);
 }
+
+//Function to insert node at end.
 void insertAtEnd(){
     newNode = (struct node*)malloc(sizeof(struct node));
     printf("Enter data : ");
@@ -84,6 +99,8 @@ void insertAtEnd(){
     }
     printf("\n %d is inserted at the end.\n",newNode->data);
 }
+
+//Function to insert node at any position.
 void insertAtPos(){
     int i=1,pos;
     newNode = (struct node*)malloc(sizeof(struct node));
@@ -132,6 +149,8 @@ void insertAtPos(){
         }
     }
 }
+
+//Function to delete node at begin.
 void deleteAtBeg(){
     if(head == NULL){
         printf("Node is empty.\n");
@@ -147,6 +166,8 @@ void deleteAtBeg(){
         }
     }
 }
+
+//Function to delete node at end.
 void deleteAtEnd(){
     if(head == NULL){
         printf("Node is empty.\n");
@@ -168,6 +189,8 @@ void deleteAtEnd(){
         }
     }
 }
+
+//Function to delete node at any position.
 void deleteAtPos() {
     int pos, i = 1;
 
