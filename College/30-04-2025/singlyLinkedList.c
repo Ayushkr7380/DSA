@@ -4,7 +4,7 @@ struct node {
     int data;
     struct node *next;
 };
-
+//head ,temp and newnode pointer declared globally
 struct node *head,*temp,*newNode;
 void implementLinkedList(){
     head = 0;
