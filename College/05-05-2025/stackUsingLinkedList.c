@@ -7,7 +7,7 @@ struct node{
 };
 
 struct node *top = 0,*newNode;
-
+//push operation on stack
 void push(int data){
     newNode = (struct node *)malloc(sizeof(struct node));
     newNode->data = data;
@@ -15,6 +15,7 @@ void push(int data){
 
     top = newNode;
 }
+//display all elements of stack
 void display(){
     struct node *temp;
     temp = top;
