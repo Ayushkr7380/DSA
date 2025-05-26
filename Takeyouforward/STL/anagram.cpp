@@ -3,12 +3,13 @@ using namespace std;
 
 int main(){
     vector<string> arr = {"cat","atc","tac","bat"};
+    
     bool flag;
-    for(int i=0;i<4;i++){
+    for(int i=0;i<arr.size();i++){
         sort(arr[i].begin() , arr[i].end());
     }
 
-    for(int i=0;i<4;i++){
+    for(int i=0;i<arr.size();i++){
         if(arr[i] == arr[0]){
             flag = true;
         }
