@@ -3,7 +3,7 @@ int stack[4];
 int top = -1;
 void push(){
     int x;
-    printf(" --- Enter data in stack ---\n");
+    printf("--- Enter data in stack ---\n");
 
     for(int i=0;i<=4;i++){
         printf("Enter data : ");
