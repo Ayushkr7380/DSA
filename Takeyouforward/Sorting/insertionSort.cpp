@@ -1,37 +1,44 @@
 #include<iostream>
 using namespace std;
-void insertionSort(int arr[],int size){
-    for(int i=0;i<=size - 1;i++){
+
+// Function to perform Insertion Sort
+void insertionSort(int arr[], int size) {
+    // Loop over each element starting from the first
+    for(int i = 0; i <= size - 1; i++) {
         int j = i;
-        
-        while(j > 0 && arr[j-1] > arr[j]){
-            int temp = arr[j-1];
-            arr[j-1] = arr[j];
+
+        // Compare and shift elements to the right to insert arr[i] at correct position
+        while(j > 0 && arr[j - 1] > arr[j]) {
+            // Swap arr[j] and arr[j-1]
+            int temp = arr[j - 1];
+            arr[j - 1] = arr[j];
             arr[j] = temp;
 
-            j--;
+            j--; // Move one step back
         }
     }
 }
 
-int main(){
-    int arr[]={1,2,34,3,56};
-    int size = sizeof(arr) / sizeof(arr[0]);
+int main() {
+    // Input array
+    int arr[] = {1, 2, 34, 3, 56};
+    int size = sizeof(arr) / sizeof(arr[0]); // Calculate size of array
 
-    //Before sorting
-    cout<<"Before insertion sort : "<<endl;
-    for(int ele:arr){
-        cout<<ele<<" ";
+    // Before sorting
+    cout << "Before insertion sort: " << endl;
+    for(int ele : arr) {
+        cout << ele << " ";
     }
-    cout<<endl;
+    cout << endl;
 
-    //sorting function
-    insertionSort(arr,size);
+    // Call sorting function
+    insertionSort(arr, size);
 
-    //After sorting
-    cout<<"After insertion sort : "<<endl;
-    for(int ele:arr){
-        cout<<ele<<" ";
+    // After sorting
+    cout << "After insertion sort: " << endl;
+    for(int ele : arr) {
+        cout << ele << " ";
     }
-    return 0; //It tells the successful execution of program.
+
+    return 0; // It indicates successful program execution
 }
