@@ -12,7 +12,7 @@ int main(){
             countOne = 0;
         }
     }
-
+//display
     printf("Count : %d",countOne);
     return 0;
 }
