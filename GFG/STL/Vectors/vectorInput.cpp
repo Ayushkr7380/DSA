@@ -14,6 +14,8 @@ int main() {
         cin >> v[i];
     }
 
+    
+
     cout << "You entered:\n";
     for (int num : v) {
         cout << num << " ";
