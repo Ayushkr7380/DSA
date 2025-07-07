@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+
 using namespace std;
 int main(){
     int arr[] = {12,12,3,4,4,3,1,12};
