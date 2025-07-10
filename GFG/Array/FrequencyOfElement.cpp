@@ -2,7 +2,7 @@
 
 using namespace std;
 int main(){
-    int arr[] = {12,12,3,4,4,3,1,12};
+    int arr[] = {12,12,3,4,4,3,12};
     int size = sizeof(arr) / sizeof(arr[0]);
     vector<pair<int,int>> result;
     for(int i = 0;i<size;i++){
