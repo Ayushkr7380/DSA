@@ -1,25 +1,31 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h> // Includes all standard libraries
 using namespace std;
-int main(){
-    int arr[] = {12,3,46,123,3};
+
+int main() {
+    // Initialize the array
+    int arr[] = {12, 3, 46, 123, 3};
+
+    // Calculate the size of the array
     int arraySize = sizeof(arr) / sizeof(arr[0]);
 
-    cout<<"Before reverse : "<<endl;
-    for(int i=0;i<arraySize;i++){
+    // Print the array before reversing
+    cout << "Before reverse : " << endl;
+    for (int i = 0; i < arraySize; i++) {
         cout << arr[i] << " ";
     }
+    cout << endl;
 
-    cout<<""<<endl;
-
-    //Reverse Array Logic
-    for(int i=0;i<arraySize/2;i++){
+    // Reverse the array in-place
+    // Swap the ith element with the (size-1-i)th element
+    for (int i = 0; i < arraySize / 2; i++) {
         int temp = arr[i];
         arr[i] = arr[arraySize - 1 - i];
         arr[arraySize - 1 - i] = temp;
-    } 
+    }
 
-    cout<<"After reverse : "<<endl;
-    for(int i=0;i<arraySize;i++){
+    // Print the array after reversing
+    cout << "After reverse : " << endl;
+    for (int i = 0; i < arraySize; i++) {
         cout << arr[i] << " ";
     }
 
