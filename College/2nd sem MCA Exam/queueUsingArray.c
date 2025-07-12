@@ -11,7 +11,7 @@ void enqueue(int n){
         printf("\n Queue is full.\n");
         return;
     }
-    if(front = -1 && rear == -1){
+    if(front == -1 && rear == -1){
         front = 0;
         rear = 0;
 
